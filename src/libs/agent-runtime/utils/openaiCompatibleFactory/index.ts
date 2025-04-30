@@ -354,7 +354,10 @@ export const LobeOpenAICompatibleFactory = <T extends Record<string, any> = any>
     async textToImage(payload: TextToImagePayload) {
       try {
         const res = await this.client.images.generate(payload);
-        return (res.data || []).map((o) => o.url) as string[];
+        // 只处理b64_json属性，gpt-image-1模型只返回这种格式
+        return (res.data || [])
+          .map((o) => (o.b64_json ? `data:image/png;base64,${o.b64_json}` : null))
+          .filter(Boolean) as string[];
       } catch (error) {
         throw this.handleError(error);
       }

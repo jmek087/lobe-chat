@@ -1,4 +1,4 @@
-import { DallEImageQuality, DallEImageSize, DallEImageStyle } from '@/types/tool/dalle';
+import { GPTImageQuality, GPTImageSize } from '@/types/tool/dalle';
 
 export interface TextToImagePayload {
   model: string;
@@ -16,19 +16,10 @@ export interface TextToImagePayload {
    * hd creates images with finer details and greater consistency across the image.
    * This param is only supported for dall-e-3.
    */
-  quality?: DallEImageQuality;
+  quality?: GPTImageQuality;
   /**
    * The size of the generated images.
    * Must be one of '1792x1024' , '1024x1024' , '1024x1792'
    */
-  size?: DallEImageSize;
-
-  /**
-   * The style of the generated images. Must be one of vivid or natural.
-   * Vivid causes the model to lean towards generating hyper-real and dramatic images.
-   * Natural causes the model to produce more natural, less hyper-real looking images.
-   * This param is only supported for dall-e-3.
-   * @default vivid
-   */
-  style?: DallEImageStyle;
+  size?: GPTImageSize;
 }

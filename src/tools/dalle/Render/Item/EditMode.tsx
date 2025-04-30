@@ -4,10 +4,11 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { DallEImageItem } from '@/types/tool/dalle';
+import { GPTImageItem } from '@/types/tool/dalle';
 
-interface EditModeProps extends DallEImageItem {
+interface EditModeProps extends GPTImageItem {
   setEdit: (edit: boolean) => void;
+  style?: 'vivid' | 'natural';
 }
 
 const EditMode = memo<EditModeProps>(({ prompt, setEdit, style, size, quality }) => {

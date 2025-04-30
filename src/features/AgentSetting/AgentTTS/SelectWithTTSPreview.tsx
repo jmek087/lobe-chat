@@ -79,8 +79,8 @@ const SelectWithTTSPreview = forwardRef<RefSelectProps, SelectWithTTSPreviewProp
             allowPause={false}
             audio={audio}
             buttonActive
-            buttonSize={{ blockSize: 36, fontSize: 16 }}
-            buttonStyle={{ border: `1px solid ${theme.colorBorder}` }}
+            buttonSize={{ blockSize: 36 }}
+            buttonStyle={{ border: `1px solid ${theme.colorBorder}`, fontSize: '16px' }}
             isLoading={isGlobalLoading}
             onInitPlay={start}
             onLoadingStop={stop}

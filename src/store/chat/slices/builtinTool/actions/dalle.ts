@@ -10,9 +10,7 @@ import { uploadService } from '@/services/upload';
 import { chatSelectors } from '@/store/chat/selectors';
 import { ChatStore } from '@/store/chat/store';
 import { useFileStore } from '@/store/file';
-import { DallEImageItem } from '@/types/tool/dalle';
-
-
+import { GPTImageItem } from '@/types/tool/dalle';
 import { setNamespace } from '@/utils/storeDebug';
 
 const n = setNamespace('tool');
@@ -20,10 +18,10 @@ const n = setNamespace('tool');
 const SWR_FETCH_KEY = 'FetchImageItem';
 
 export interface ChatDallEAction {
-  generateImageFromPrompts: (items: DallEImageItem[], id: string) => Promise<void>;
-  text2image: (id: string, data: DallEImageItem[]) => Promise<void>;
+  generateImageFromPrompts: (items: GPTImageItem[], id: string) => Promise<void>;
+  text2image: (id: string, data: GPTImageItem[]) => Promise<void>;
   toggleDallEImageLoading: (key: string, value: boolean) => void;
-  updateImageItem: (id: string, updater: (data: DallEImageItem[]) => void) => Promise<void>;
+  updateImageItem: (id: string, updater: (data: GPTImageItem[]) => void) => Promise<void>;
   useFetchDalleImageItem: (id: string) => SWRResponse;
 }
 
@@ -65,7 +63,7 @@ export const dalleSlice: StateCreator<
       });
 
       toggleDallEImageLoading(messageId + params.prompt, false);
-      const imageFile = await uploadService.getImageFileByUrlWithCORS(
+      const imageFile = await uploadService.getImageFileByBase64(
         url,
         `${originPrompt || params.prompt}_${index}.png`,
       );
@@ -101,7 +99,7 @@ export const dalleSlice: StateCreator<
     const message = chatSelectors.getMessageById(id)(get());
     if (!message) return;
 
-    const data: DallEImageItem[] = JSON.parse(message.content);
+    const data: GPTImageItem[] = JSON.parse(message.content);
 
     const nextContent = produce(data, updater);
     await get().internal_updateMessageContent(id, JSON.stringify(nextContent));

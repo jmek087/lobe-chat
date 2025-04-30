@@ -8,7 +8,7 @@ import { imageGenerationService } from '@/services/textToImage';
 import { uploadService } from '@/services/upload';
 import { chatSelectors } from '@/store/chat/selectors';
 import { ChatMessage } from '@/types/message';
-import { DallEImageItem } from '@/types/tool/dalle';
+import { GPTImageItem } from '@/types/tool/dalle';
 
 import { useChatStore } from '../../../store';
 
@@ -30,10 +30,7 @@ describe('chatToolSlice - dalle', () => {
       );
 
       const messageId = 'message-id';
-      const prompts = [
-        { prompt: 'test prompt 1' },
-        { prompt: 'test prompt 2' },
-      ] as DallEImageItem[];
+      const prompts = [{ prompt: 'test prompt 1' }, { prompt: 'test prompt 2' }] as GPTImageItem[];
       const mockUrl = 'https://example.com/image.png';
       const mockId = 'image-id';
 
@@ -100,7 +97,7 @@ describe('chatToolSlice - dalle', () => {
     it('should call generateImageFromPrompts with provided data', async () => {
       const { result } = renderHook(() => useChatStore());
       const id = 'message-id';
-      const data = [{ prompt: 'prompt 1' }, { prompt: 'prompt 2' }] as DallEImageItem[];
+      const data = [{ prompt: 'prompt 1' }, { prompt: 'prompt 2' }] as GPTImageItem[];
 
       // Mock generateImageFromPrompts
       const generateImageFromPromptsMock = vi.spyOn(result.current, 'generateImageFromPrompts');

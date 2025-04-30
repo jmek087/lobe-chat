@@ -7,10 +7,10 @@ import { useChatStore } from '@/store/chat';
 import { chatToolSelectors } from '@/store/chat/selectors';
 import { useUserStore } from '@/store/user';
 import { settingsSelectors } from '@/store/user/selectors';
-import { DallEImageItem } from '@/types/tool/dalle';
+import { GPTImageItem } from '@/types/tool/dalle';
 
 interface ToolBarProps {
-  content: DallEImageItem[];
+  content: GPTImageItem[];
   messageId: string;
 }
 

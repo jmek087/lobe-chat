@@ -41,8 +41,7 @@ describe('createBuiltinToolSlice', () => {
       const params = {
         prompts: ['test prompt'],
         size: '512x512',
-        quality: 'standard',
-        style: 'vivid',
+        quality: 'medium',
       };
 
       act(() => {
@@ -58,9 +57,8 @@ describe('createBuiltinToolSlice', () => {
 
       expect(mockFn).toBeCalledWith({
         prompts: ['test prompt'],
-        quality: 'standard',
+        quality: 'medium',
         size: '512x512',
-        style: 'vivid',
       });
     });
   });
@@ -73,14 +71,13 @@ describe('createBuiltinToolSlice', () => {
       const data = result.current.text2image({
         prompts: ['prompt1', 'prompt2'],
         size: '1024x1024',
-        quality: 'standard',
-        style: 'vivid',
+        quality: 'medium',
       });
 
       // Then
       expect(data).toEqual([
-        { prompt: 'prompt1', quality: 'standard', size: '1024x1024', style: 'vivid' },
-        { prompt: 'prompt2', quality: 'standard', size: '1024x1024', style: 'vivid' },
+        { prompt: 'prompt1', quality: 'medium', size: '1024x1024' },
+        { prompt: 'prompt2', quality: 'medium', size: '1024x1024' },
       ]);
     });
   });

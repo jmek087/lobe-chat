@@ -8,7 +8,7 @@ import { Flexbox } from 'react-layout-kit';
 
 import { useChatStore } from '@/store/chat';
 import { chatToolSelectors } from '@/store/chat/selectors';
-import { DallEImageItem } from '@/types/tool/dalle';
+import { GPTImageItem } from '@/types/tool/dalle';
 
 import EditMode from './EditMode';
 import Error from './Error';
@@ -33,56 +33,56 @@ const useStyles = createStyles(({ css, token, prefixCls }) => ({
   `,
 }));
 
-const ImageItem = memo<DallEImageItem & { index: number; messageId: string }>(
-  ({ prompt, messageId, imageId, previewUrl, index, style, size, quality }) => {
-    const { t } = useTranslation('tool');
-    const { styles } = useStyles();
+const ImageItem = memo<
+  GPTImageItem & { index: number; messageId: string; style?: 'vivid' | 'natural' }
+>(({ prompt, messageId, imageId, previewUrl, index, style, size, quality }) => {
+  const { t } = useTranslation('tool');
+  const { styles } = useStyles();
 
-    const [edit, setEdit] = useState(false);
-    const loading = useChatStore(chatToolSelectors.isDallEImageGenerating(messageId + prompt));
+  const [edit, setEdit] = useState(false);
+  const loading = useChatStore(chatToolSelectors.isDallEImageGenerating(messageId + prompt));
 
-    if (edit)
-      return (
-        <Flexbox className={styles.container} padding={8}>
-          <EditMode
-            imageId={imageId}
-            prompt={prompt}
-            quality={quality}
-            setEdit={setEdit}
-            size={size}
-            style={style}
-          />
-        </Flexbox>
-      );
-
-    if (imageId || previewUrl)
-      return <ImagePreview imageId={imageId} previewUrl={previewUrl} prompt={prompt} />;
-
+  if (edit)
     return (
       <Flexbox className={styles.container} padding={8}>
-        {loading ? (
-          <Spin indicator={<Icon icon={Loader2} spin />} size={'large'} tip={t('dalle.generating')}>
-            {prompt}
-          </Spin>
-        ) : (
-          <Flexbox gap={12}>
-            <Flexbox>
-              <Highlighter
-                copyButtonSize={'small'}
-                fileName={t('dalle.prompt')}
-                fullFeatured
-                language={'prompt'}
-                showLanguage
-              >
-                {prompt}
-              </Highlighter>
-            </Flexbox>
-            <Error index={index} messageId={messageId} />
-          </Flexbox>
-        )}
+        <EditMode
+          imageId={imageId}
+          prompt={prompt}
+          quality={quality}
+          setEdit={setEdit}
+          size={size}
+          style={style}
+        />
       </Flexbox>
     );
-  },
-);
+
+  if (imageId || previewUrl)
+    return <ImagePreview imageId={imageId} previewUrl={previewUrl} prompt={prompt} />;
+
+  return (
+    <Flexbox className={styles.container} padding={8}>
+      {loading ? (
+        <Spin indicator={<Icon icon={Loader2} spin />} size={'large'} tip={t('dalle.generating')}>
+          {prompt}
+        </Spin>
+      ) : (
+        <Flexbox gap={12}>
+          <Flexbox>
+            <Highlighter
+              copyButtonSize={'small'}
+              fileName={t('dalle.prompt')}
+              fullFeatured
+              language={'prompt'}
+              showLanguage
+            >
+              {prompt}
+            </Highlighter>
+          </Flexbox>
+          <Error index={index} messageId={messageId} />
+        </Flexbox>
+      )}
+    </Flexbox>
+  );
+});
 
 export default ImageItem;

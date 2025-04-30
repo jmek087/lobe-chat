@@ -172,6 +172,47 @@ class UploadService {
     return new File([data], filename, { lastModified: Date.now(), type: fileType });
   };
 
+  /**
+   * 从base64数据创建File对象
+   * @param base64Data 完整的base64字符串或data URL
+   * @param filename 可选的文件名
+   * @param defaultMimeType 默认MIME类型，当无法从data URL解析时使用
+   */
+  getImageFileByBase64 = (
+    base64Data: string,
+    filename: string,
+    defaultMimeType = 'image/png',
+  ): File => {
+    // 处理data:image/格式
+    let mimeType = defaultMimeType;
+    let base64 = base64Data;
+
+    if (base64Data.startsWith('data:')) {
+      const dataUrlParts = base64Data.split(',');
+      mimeType = dataUrlParts[0].match(/:(.*?);/)?.[1] || defaultMimeType;
+      base64 = dataUrlParts[1];
+    }
+
+    // 将base64转换为二进制数据
+    const byteCharacters = atob(base64);
+    const byteArrays = [];
+
+    // 分块处理以避免内存问题
+    for (let offset = 0; offset < byteCharacters.length; offset += 1024) {
+      const slice = byteCharacters.slice(offset, offset + 1024);
+
+      const byteNumbers = new Uint8Array(slice.length);
+      for (let i = 0; i < slice.length; i++) {
+        byteNumbers[i] = slice.charCodeAt(i);
+      }
+
+      byteArrays.push(byteNumbers);
+    }
+
+    const blob = new Blob(byteArrays, { type: mimeType });
+    return new File([blob], filename, { type: mimeType });
+  };
+
   private getSignedUploadUrl = async (
     file: File,
     directory?: string,

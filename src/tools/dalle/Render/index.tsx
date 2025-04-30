@@ -5,12 +5,12 @@ import { Flexbox } from 'react-layout-kit';
 
 import { fileService } from '@/services/file';
 import { BuiltinRenderProps } from '@/types/tool';
-import { DallEImageItem } from '@/types/tool/dalle';
+import { GPTImageItem } from '@/types/tool/dalle';
 
 import GalleyGrid from './GalleyGrid';
 import ImageItem from './Item';
 
-const DallE = memo<BuiltinRenderProps<DallEImageItem[]>>(({ content, messageId }) => {
+const DallE = memo<BuiltinRenderProps<GPTImageItem[]>>(({ content, messageId }) => {
   const currentRef = useRef(0);
 
   const handleDownload = async () => {

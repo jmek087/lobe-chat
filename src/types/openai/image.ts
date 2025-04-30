@@ -1,7 +1,15 @@
-import { DallEImageQuality, DallEImageSize, DallEImageStyle } from '@/types/tool/dalle';
+import { GPTImageQuality, GPTImageSize } from '@/types/tool/dalle';
 
 export interface OpenAIImagePayload {
-  model: 'dall-e-2' | 'dall-e-3';
+  /**
+   * List of image URLs for image-to-image generation or editing.
+   */
+  images?: string[];
+  /**
+   * Image mask for inpainting. Base64 encoded image.
+   */
+  mask?: string;
+  model: 'gpt-image-1';
   /**
    * The number of images to generate. Must be between 1 and 10.
    */
@@ -13,22 +21,62 @@ export interface OpenAIImagePayload {
   prompt: string;
   /**
    * The quality of the image that will be generated.
-   * hd creates images with finer details and greater consistency across the image.
-   * This param is only supported for dall-e-3.
+   * high: best quality, more tokens used
+   * medium: balanced quality and token usage
+   * low: fastest generation, fewer tokens
    */
-  quality?: DallEImageQuality;
+  quality?: GPTImageQuality;
   /**
    * The size of the generated images.
-   * Must be one of '1792x1024' , '1024x1024' , '1024x1792'
+   * Options: '1024x1024', '1024x1536', '1536x1024', 'auto'
    */
-  size?: DallEImageSize;
+  size?: GPTImageSize;
+}
 
-  /**
-   * The style of the generated images. Must be one of vivid or natural.
-   * Vivid causes the model to lean towards generating hyper-real and dramatic images.
-   * Natural causes the model to produce more natural, less hyper-real looking images.
-   * This param is only supported for dall-e-3.
-   * @default vivid
-   */
-  style?: DallEImageStyle;
+/**
+ * API response structure for image generation
+ */
+export interface OpenAIImageResponse {
+  created: number; // Unix timestamp
+  data: {
+    /**
+     * Base64 encoded image if response_format is b64_json
+     */
+    b64_json?: string;
+    /**
+     * Revised prompt used for generation
+     */
+    revised_prompt?: string;
+    /**
+     * Image URL if response_format is url
+     */
+    url?: string;
+  }[];
+  usage?: {
+    /**
+     * Number of tokens used for input
+     */
+    input_tokens: number;
+    /**
+     * Detailed breakdown of input tokens
+     */
+    input_tokens_details: {
+      /**
+       * Tokens used for processing input images
+       */
+      image_tokens: number;
+      /**
+       * Tokens used for processing input text
+       */
+      text_tokens: number;
+    };
+    /**
+     * Number of tokens used for output
+     */
+    output_tokens: number;
+    /**
+     * Total number of tokens used
+     */
+    total_tokens: number;
+  };
 }
