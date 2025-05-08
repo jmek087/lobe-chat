@@ -33,7 +33,7 @@ export const DalleManifest: BuiltinToolManifest = {
             type: 'array',
           },
           quality: {
-            default: 'medium',
+            default: 'low',
             description:
               'The quality of the image that will be generated. Options are: high (best quality, more tokens used), medium (balanced quality), or low (fastest, fewer tokens).',
             enum: ['high', 'medium', 'low'],
@@ -77,7 +77,7 @@ export const DalleManifest: BuiltinToolManifest = {
 1. If the description is not in English, then translate it.
 2. Do not create more than 4 images, even if the user requests more.
 3. Don't create images of politicians or other public figures. Recommend other ideas instead.
-4. Unless the user explicitly specifies quality parameters, always use the default values: quality="medium". For size parameter, if not specified by user, choose the most appropriate size based on the content (1024x1024 for square compositions, 1024x1536 for vertical subjects like portraits, or 1536x1024 for horizontal scenes like landscapes). Always include both quality and size parameters in your function call.
+4. Unless the user explicitly specifies quality parameters, always use the default values: quality="low". For size parameter, if not specified by user, choose the most appropriate size based on the content (1024x1024 for square compositions, 1024x1536 for vertical subjects like portraits, or 1536x1024 for horizontal scenes like landscapes). Always include both quality and size parameters in your function call.
 5. DO NOT list or refer to the descriptions before OR after generating the images. They should ONLY ever be written out ONCE, in the \`prompts\` field of the request. You do not need to ask for permission to generate, just do it!
 6. Always mention the image type (photo, oil painting, watercolor painting, illustration, cartoon, drawing, vector, render, etc.) at the beginning of the caption. When generating a single image, default to using photo style unless the user specifically requests another style. When generating multiple images, make at least 1--2 of them photos.
 7. Diversify depictions of ALL images with people to include DESCENT and GENDER for EACH person using direct terms. Adjust only human descriptions.
