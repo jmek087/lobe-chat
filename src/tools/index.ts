@@ -4,7 +4,7 @@ import { LobeBuiltinTool } from '@/types/tool';
 import { ArtifactsManifest } from './artifacts';
 import { DalleManifest } from './dalle';
 import { GptImageManifest } from './gpt-image';
-import { LocalFilesManifest } from './local-files';
+import { LocalSystemManifest } from './local-system';
 import { WebBrowsingManifest } from './web-browsing';
 
 export const builtinTools: LobeBuiltinTool[] = [
@@ -25,8 +25,8 @@ export const builtinTools: LobeBuiltinTool[] = [
   },
   {
     hidden: !isDesktop,
-    identifier: LocalFilesManifest.identifier,
-    manifest: LocalFilesManifest,
+    identifier: LocalSystemManifest.identifier,
+    manifest: LocalSystemManifest,
     type: 'builtin',
   },
   {

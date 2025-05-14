@@ -4,8 +4,8 @@ import { DalleManifest } from './dalle';
 import DalleRender from './dalle/Render';
 import { GptImageManifest } from './gpt-image';
 import GptImageRender from './gpt-image/Render';
-import { LocalFilesManifest } from './local-files';
-import LocalFilesRender from './local-files/Render';
+import { LocalSystemManifest } from './local-system';
+import LocalSystemRender from './local-system/Render';
 import { WebBrowsingManifest } from './web-browsing';
 import WebBrowsing from './web-browsing/Render';
 
@@ -13,5 +13,5 @@ export const BuiltinToolsRenders: Record<string, BuiltinRender> = {
   [DalleManifest.identifier]: DalleRender as BuiltinRender,
   [GptImageManifest.identifier]: GptImageRender as BuiltinRender,
   [WebBrowsingManifest.identifier]: WebBrowsing as BuiltinRender,
-  [LocalFilesManifest.identifier]: LocalFilesRender as BuiltinRender,
+  [LocalSystemManifest.identifier]: LocalSystemRender as BuiltinRender,
 };
