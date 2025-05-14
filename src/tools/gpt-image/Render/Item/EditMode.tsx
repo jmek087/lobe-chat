@@ -15,7 +15,7 @@ const EditMode = memo<EditModeProps>(({ prompt, setEdit, size, quality }) => {
 
   return (
     <Flexbox gap={16}>
-      <TextArea style={{ minHeight: 120 }} type={'block'} value={prompt} />
+      <TextArea style={{ minHeight: 120 }} value={prompt} />
       <Flexbox horizontal justify={'space-between'}>
         质量
         <Radio.Group

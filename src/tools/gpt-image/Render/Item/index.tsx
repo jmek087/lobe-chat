@@ -71,7 +71,7 @@ const ImageItem = memo<GPTImageItem & { index: number; messageId: string }>(
           <Flexbox gap={12}>
             <Flexbox>
               <Highlighter
-                copyButtonSize={'small'}
+                actionIconSize={'small'}
                 fileName={t('gptImage.prompt')}
                 fullFeatured
                 language={'prompt'}
