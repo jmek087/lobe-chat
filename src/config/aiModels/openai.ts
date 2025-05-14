@@ -56,8 +56,7 @@ export const openaiChatModels: AIChatModelCard[] = [
       vision: true,
     },
     contextWindowTokens: 1_047_576,
-    description:
-      'GPT-4.1 是我们用于复杂任务的旗舰模型。它非常适合跨领域解决问题。',
+    description: 'GPT-4.1 是我们用于复杂任务的旗舰模型。它非常适合跨领域解决问题。',
     displayName: 'GPT-4.1',
     enabled: true,
     id: 'gpt-4.1',
@@ -96,8 +95,7 @@ export const openaiChatModels: AIChatModelCard[] = [
       vision: true,
     },
     contextWindowTokens: 1_047_576,
-    description:
-      'GPT-4.1 nano 是最快，最具成本效益的GPT-4.1模型。',
+    description: 'GPT-4.1 nano 是最快，最具成本效益的GPT-4.1模型。',
     displayName: 'GPT-4.1 nano',
     id: 'gpt-4.1-nano',
     maxOutput: 32_768,
@@ -568,6 +566,19 @@ export const openaiSTTModels: AISTTModelCard[] = [
 
 // 图像生成模型
 export const openaiImageModels: AIText2ImageModelCard[] = [
+  {
+    description:
+      'OpenAI 最新的图像生成模型，支持高质量图像生成、图像编辑及多图片输入，可生成更高质量的图像',
+    displayName: 'GPT-Image-1',
+    id: 'gpt-image-1',
+    pricing: {
+      high: 0.1,
+      low: 0.03,
+      medium: 0.06,
+    },
+    resolutions: ['1024x1024', '1024x1536', '1536x1024', 'auto'],
+    type: 'image',
+  },
   {
     description:
       '最新的 DALL·E 模型，于2023年11月发布。支持更真实、准确的图像生成，具有更强的细节表现力',

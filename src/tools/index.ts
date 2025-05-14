@@ -3,6 +3,7 @@ import { LobeBuiltinTool } from '@/types/tool';
 
 import { ArtifactsManifest } from './artifacts';
 import { DalleManifest } from './dalle';
+import { GptImageManifest } from './gpt-image';
 import { LocalFilesManifest } from './local-files';
 import { WebBrowsingManifest } from './web-browsing';
 
@@ -15,6 +16,11 @@ export const builtinTools: LobeBuiltinTool[] = [
   {
     identifier: DalleManifest.identifier,
     manifest: DalleManifest,
+    type: 'builtin',
+  },
+  {
+    identifier: GptImageManifest.identifier,
+    manifest: GptImageManifest,
     type: 'builtin',
   },
   {

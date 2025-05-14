@@ -10,6 +10,7 @@ import {
   EmbeddingsPayload,
   ModelRequestOptions,
   PullModelParams,
+  TextToGptImagePayload,
   TextToImagePayload,
   TextToSpeechOptions,
   TextToSpeechPayload,
@@ -25,6 +26,8 @@ export interface LobeRuntimeAI {
   models?(): Promise<any>;
 
   textToImage?: (payload: TextToImagePayload) => Promise<string[]>;
+
+  textToGptImage?: (payload: TextToGptImagePayload) => Promise<string[]>;
 
   textToSpeech?: (
     payload: TextToSpeechPayload,

@@ -115,6 +115,9 @@
       "eslint --fix"
     ]
   },
+  "overrides": {
+    "mdast-util-gfm-autolink-literal": "2.0.0"
+  },
   "dependencies": {
     "@ant-design/icons": "^5.6.1",
     "@ant-design/pro-components": "^2.8.7",
@@ -209,7 +212,7 @@
     "officeparser": "^5.1.1",
     "oidc-provider": "^8.4.0",
     "ollama": "^0.5.14",
-    "openai": "^4.91.1",
+    "openai": "^4.96.0",
     "openapi-fetch": "^0.9.8",
     "partial-json": "^0.1.7",
     "pdf-parse": "^1.1.1",
@@ -363,8 +366,5 @@
         }
       }
     }
-  },
-  "overrides": {
-    "mdast-util-gfm-autolink-literal": "2.0.0"
   }
 }
