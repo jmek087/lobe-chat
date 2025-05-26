@@ -89,5 +89,11 @@
     "**/src/server/routers/edge/*.ts": "${filename} • edge",
 
     "**/src/locales/default/*.ts": "${filename} • locale"
-  }
+  },
+  "i18n-ally.localesPaths": [
+    "locales",
+    "src/locales",
+    "apps/desktop/resources/locales",
+    "apps/desktop/src/main/locales"
+  ]
 }

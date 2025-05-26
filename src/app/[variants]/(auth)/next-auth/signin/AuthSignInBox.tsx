@@ -7,7 +7,7 @@ import { createStyles } from 'antd-style';
 import { AuthError } from 'next-auth';
 import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { memo, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import BrandWatermark from '@/components/BrandWatermark';
@@ -98,6 +98,17 @@ export default memo(() => {
       throw error;
     }
   };
+
+  // 当组件加载且有可用提供者时，检查是否存在casdoor并自动触发登录
+  useEffect(() => {
+    if (oAuthSSOProviders && oAuthSSOProviders.length > 0) {
+      // 如果存在casdoor，自动触发登录
+      const hasCasdoor = oAuthSSOProviders.includes('casdoor');
+      if (hasCasdoor) {
+        handleSignIn('casdoor');
+      }
+    }
+  }, [oAuthSSOProviders]);
 
   const footerBtns = [
     { href: DOCUMENTS_REFER_URL, id: 0, label: t('footerPageLink__help') },
