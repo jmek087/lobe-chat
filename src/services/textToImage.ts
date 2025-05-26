@@ -1,5 +1,6 @@
 import { ModelProvider } from '@/libs/model-runtime';
 import { createHeaderWithAuth } from '@/services/_auth';
+import { GPTImagePayload } from '@/types/openai/gptImage';
 import { OpenAIImagePayload } from '@/types/openai/image';
 
 import { API_ENDPOINTS } from './_url';
@@ -23,6 +24,34 @@ class ImageGenerationService {
     });
 
     const res = await fetch(API_ENDPOINTS.images(provider), {
+      body: JSON.stringify(payload),
+      headers: headers,
+      method: 'POST',
+      signal: options?.signal,
+    });
+    if (!res.ok) {
+      throw await res.json();
+    }
+
+    const urls = await res.json();
+
+    return urls[0] as string;
+  };
+
+  generateGptImage = async (
+    params: Omit<GPTImagePayload, 'model' | 'n'>,
+    options?: FetchOptions,
+  ) => {
+    const payload: GPTImagePayload = { ...params, model: 'gpt-image-1', n: 1 };
+
+    const provider = ModelProvider.OpenAI;
+
+    const headers = await createHeaderWithAuth({
+      headers: { 'Content-Type': 'application/json' },
+      provider,
+    });
+
+    const res = await fetch(API_ENDPOINTS.gptImages(provider), {
       body: JSON.stringify(payload),
       headers: headers,
       method: 'POST',

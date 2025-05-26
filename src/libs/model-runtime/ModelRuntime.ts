@@ -14,6 +14,7 @@ import {
   EmbeddingsPayload,
   ModelRequestOptions,
   PullModelParams,
+  TextToGptImagePayload,
   TextToImagePayload,
   TextToSpeechPayload,
 } from './types';
@@ -66,6 +67,10 @@ class ModelRuntime {
 
   async textToImage(payload: TextToImagePayload) {
     return this._runtime.textToImage?.(payload);
+  }
+
+  async textToGptImage(payload: TextToGptImagePayload) {
+    return this._runtime.textToGptImage?.(payload);
   }
 
   async models() {
