@@ -1028,6 +1028,12 @@
   "gemini-2.5-flash-preview-04-17": {
     "description": "Gemini 2.5 Flash Önizleme, Google'ın en iyi fiyat-performans oranına sahip modelidir ve kapsamlı özellikler sunar."
   },
+  "gemini-2.5-flash-preview-04-17-thinking": {
+    "description": "Gemini 2.5 Flash Preview, Google'ın en uygun fiyatlı modeli olup, kapsamlı özellikler sunmaktadır."
+  },
+  "gemini-2.5-flash-preview-05-20": {
+    "description": "Gemini 2.5 Flash Preview, Google'ın en uygun fiyatlı modeli olup, kapsamlı özellikler sunmaktadır."
+  },
   "gemini-2.5-pro-exp-03-25": {
     "description": "Gemini 2.5 Pro Deneysel, Google'ın en gelişmiş düşünce modeli olup, kod, matematik ve STEM alanlarındaki karmaşık sorunları akıl yürütebilmektedir. Ayrıca, uzun bağlamları kullanarak büyük veri setlerini, kod havuzlarını ve belgeleri analiz edebilir."
   },
@@ -1256,29 +1262,26 @@
   "gpt-4o-realtime-preview-2024-12-17": {
     "description": "GPT-4o gerçek zamanlı versiyonu, ses ve metin için gerçek zamanlı giriş ve çıkış desteği sunar."
   },
+  "gpt-image-1": {
+    "description": "OpenAI'nin en son görüntü oluşturma modeli, yüksek kaliteli görüntü oluşturma, görüntü düzenleme ve çoklu görüntü girişi destekler, daha yüksek kaliteli görüntüler üretebilir."
+  },
   "grok-2-1212": {
     "description": "Bu model, doğruluk, talimat takibi ve çok dilli yetenekler açısından geliştirilmiştir."
   },
   "grok-2-vision-1212": {
     "description": "Bu model, doğruluk, talimat takibi ve çok dilli yetenekler açısından geliştirilmiştir."
   },
-  "grok-3-beta": {
+  "grok-3": {
     "description": "Amiral gemisi model, veri çıkarımı, programlama ve metin özeti gibi kurumsal uygulamalarda uzmandır ve finans, sağlık, hukuk ve bilim gibi alanlarda derin bir bilgiye sahiptir."
   },
-  "grok-3-fast-beta": {
+  "grok-3-fast": {
     "description": "Amiral gemisi model, veri çıkarımı, programlama ve metin özeti gibi kurumsal uygulamalarda uzmandır ve finans, sağlık, hukuk ve bilim gibi alanlarda derin bir bilgiye sahiptir."
   },
-  "grok-3-mini-beta": {
-    "description": "Hafif model, konuşmadan önce düşünür. Hızlı ve akıllı çalışır, derin alan bilgisi gerektirmeyen mantıksal görevler için uygundur ve ham düşünce izlerini elde edebilir."
+  "grok-3-mini": {
+    "description": "Hafif model, konuşmadan önce düşünme yapar. Hızlı ve akıllıdır, derin alan bilgisi gerektirmeyen mantıksal görevler için uygundur ve ham düşünce izlerini elde edebilir."
   },
-  "grok-3-mini-fast-beta": {
-    "description": "Hafif model, konuşmadan önce düşünür. Hızlı ve akıllı çalışır, derin alan bilgisi gerektirmeyen mantıksal görevler için uygundur ve ham düşünce izlerini elde edebilir."
-  },
-  "grok-beta": {
-    "description": "Grok 2 ile karşılaştırılabilir performansa sahip, ancak daha yüksek verimlilik, hız ve işlevsellik sunar."
-  },
-  "grok-vision-beta": {
-    "description": "En son görüntü anlama modeli, belgeler, grafikler, ekran görüntüleri ve fotoğraflar gibi çeşitli görsel bilgileri işleyebilir."
+  "grok-3-mini-fast": {
+    "description": "Hafif model, konuşmadan önce düşünme yapar. Hızlı ve akıllıdır, derin alan bilgisi gerektirmeyen mantıksal görevler için uygundur ve ham düşünce izlerini elde edebilir."
   },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B, birden fazla üst düzey modelin birleşimiyle yaratıcı ve zeka odaklı bir dil modelidir."
@@ -1321,6 +1324,9 @@
   },
   "hunyuan-t1-latest": {
     "description": "Sektördeki ilk ultra büyük ölçekli Hybrid-Transformer-Mamba çıkarım modeli, çıkarım yeteneklerini genişletir, yüksek çözümleme hızı sunar ve insan tercihleri ile daha iyi hizalanır."
+  },
+  "hunyuan-t1-vision": {
+    "description": "Hunyuan çok modlu anlayış derin düşünce modeli, çok modlu yerel uzun düşünce zincirlerini destekler, çeşitli görüntü çıkarım senaryolarını işleme konusunda uzmandır ve fen bilimleri zorluklarında hızlı düşünme modeline göre kapsamlı bir iyileşme sağlar."
   },
   "hunyuan-translation": {
     "description": "Çince ve İngilizce, Japonca, Fransızca, Portekizce, İspanyolca, Türkçe, Rusça, Arapça, Korece, İtalyanca, Almanca, Vietnamca, Malayca, Endonezyaca dahil olmak üzere 15 dil arasında çeviri desteği sunar. Çoklu senaryo çeviri değerlendirme setine dayalı otomatik değerlendirme COMET puanı ile, ondan fazla yaygın dildeki çeviri yetenekleri, pazarın aynı ölçekli modellerine göre genel olarak daha üstündür."

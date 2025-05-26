@@ -7,6 +7,14 @@
     "images": "Obrazy:",
     "prompt": "słowo kluczowe"
   },
+  "gptImage": {
+    "autoGenerate": "Automatyczne generowanie",
+    "downloading": "Link do obrazu wygenerowanego przez GPT jest ograniczony czasowo, trwa buforowanie obrazu lokalnie...",
+    "generate": "Generuj",
+    "generating": "Generowanie...",
+    "images": "Obrazy:",
+    "prompt": "Słowo kluczowe"
+  },
   "localFiles": {
     "file": "Plik",
     "folder": "Folder",

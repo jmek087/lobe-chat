@@ -7,6 +7,14 @@
     "images": "Imágenes:",
     "prompt": "Palabra de aviso"
   },
+  "gptImage": {
+    "autoGenerate": "Generar automáticamente",
+    "downloading": "El enlace de la imagen generada por GPT tiene un tiempo de validez limitado, se está almacenando la imagen localmente...",
+    "generate": "Generar",
+    "generating": "Generando...",
+    "images": "Imágenes:",
+    "prompt": "Palabra clave"
+  },
   "localFiles": {
     "file": "Archivo",
     "folder": "Carpeta",

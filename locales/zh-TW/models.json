@@ -1028,6 +1028,12 @@
   "gemini-2.5-flash-preview-04-17": {
     "description": "Gemini 2.5 Flash Preview 是 Google 性價比最高的模型，提供全面的功能。"
   },
+  "gemini-2.5-flash-preview-04-17-thinking": {
+    "description": "Gemini 2.5 Flash Preview 是 Google 性價比最高的模型，提供全面的功能。"
+  },
+  "gemini-2.5-flash-preview-05-20": {
+    "description": "Gemini 2.5 Flash Preview 是 Google 性價比最高的模型，提供全面的功能。"
+  },
   "gemini-2.5-pro-exp-03-25": {
     "description": "Gemini 2.5 Pro 實驗版是 Google 最先進的思維模型，能夠對代碼、數學和 STEM 領域的複雜問題進行推理，還能利用長上下文來分析大型數據集、代碼庫和文檔。"
   },
@@ -1256,29 +1262,26 @@
   "gpt-4o-realtime-preview-2024-12-17": {
     "description": "GPT-4o 實時版本，支持音頻和文本實時輸入輸出"
   },
+  "gpt-image-1": {
+    "description": "OpenAI 最新的圖像生成模型，支持高品質圖像生成、圖像編輯及多圖片輸入，可生成更高品質的圖像。"
+  },
   "grok-2-1212": {
     "description": "該模型在準確性、指令遵循和多語言能力方面有所改進。"
   },
   "grok-2-vision-1212": {
     "description": "該模型在準確性、指令遵循和多語言能力方面有所改進。"
   },
-  "grok-3-beta": {
-    "description": "旗艦級模型，擅長數據提取、程式設計和文本摘要等企業級應用，擁有金融、醫療、法律和科學等領域的深厚知識。"
+  "grok-3": {
+    "description": "旗艦級模型，擅長數據提取、編程和文本摘要等企業級應用，擁有金融、醫療、法律和科學等領域的深厚知識。"
   },
-  "grok-3-fast-beta": {
-    "description": "旗艦級模型，擅長數據提取、程式設計和文本摘要等企業級應用，擁有金融、醫療、法律和科學等領域的深厚知識。"
+  "grok-3-fast": {
+    "description": "旗艦級模型，擅長數據提取、編程和文本摘要等企業級應用，擁有金融、醫療、法律和科學等領域的深厚知識。"
   },
-  "grok-3-mini-beta": {
-    "description": "輕量級模型，會在對話前先思考。運行快速、智能，適用於不需要深層領域知識的邏輯任務，並能獲取原始的思維軌跡。"
+  "grok-3-mini": {
+    "description": "輕量級模型，回話前會先思考。運行快速、智能，適用於不需要深層領域知識的邏輯任務，並能獲取原始的思維軌跡。"
   },
-  "grok-3-mini-fast-beta": {
-    "description": "輕量級模型，會在對話前先思考。運行快速、智能，適用於不需要深層領域知識的邏輯任務，並能獲取原始的思維軌跡。"
-  },
-  "grok-beta": {
-    "description": "擁有與 Grok 2 相當的性能，但具備更高的效率、速度和功能。"
-  },
-  "grok-vision-beta": {
-    "description": "最新的圖像理解模型，可以處理各種各樣的視覺信息，包括文檔、圖表、截圖和照片等。"
+  "grok-3-mini-fast": {
+    "description": "輕量級模型，回話前會先思考。運行快速、智能，適用於不需要深層領域知識的邏輯任務，並能獲取原始的思維軌跡。"
   },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B 是一款合併了多個頂尖模型的創意與智能相結合的語言模型。"
@@ -1321,6 +1324,9 @@
   },
   "hunyuan-t1-latest": {
     "description": "業界首個超大規模 Hybrid-Transformer-Mamba 推理模型，擴展推理能力，超強解碼速度，進一步對齊人類偏好。"
+  },
+  "hunyuan-t1-vision": {
+    "description": "混元多模態理解深度思考模型，支持多模態原生長思維鏈，擅長處理各種圖片推理場景，在理科難題上相比快思考模型全面提升。"
   },
   "hunyuan-translation": {
     "description": "支持中文和英語、日語、法語、葡萄牙語、西班牙語、土耳其語、俄語、阿拉伯語、韓語、義大利語、德語、越南語、馬來語、印尼語15種語言互譯，基於多場景翻譯評測集自動化評估COMET評分，在十餘種常用語種中外互譯能力上整體優於市場同規模模型。"

@@ -621,7 +621,7 @@
     "description": "Claude Opus 4 是 Anthropic 用于处理高度复杂任务的最强大模型。它在性能、智能、流畅性和理解力方面表现卓越。"
   },
   "claude-sonnet-4-20250514": {
-    "description": "Claude 4 Sonnet 可以产生近乎即时的响应或延长的逐步思考，用户可以清晰地看到这些过程。API 用户还可以对模型思考的时间进行细致的控制"
+    "description": "Claude Sonnet 4 可以产生近乎即时的响应或延长的逐步思考，用户可以清晰地看到这些过程。API 用户还可以对模型思考的时间进行细致的控制"
   },
   "codegeex-4": {
     "description": "CodeGeeX-4 是强大的AI编程助手，支持多种编程语言的智能问答与代码补全，提升开发效率。"
@@ -1028,6 +1028,12 @@
   "gemini-2.5-flash-preview-04-17": {
     "description": "Gemini 2.5 Flash Preview 是 Google 性价比最高的模型，提供全面的功能。"
   },
+  "gemini-2.5-flash-preview-04-17-thinking": {
+    "description": "Gemini 2.5 Flash Preview 是 Google 性价比最高的模型，提供全面的功能。"
+  },
+  "gemini-2.5-flash-preview-05-20": {
+    "description": "Gemini 2.5 Flash Preview 是 Google 性价比最高的模型，提供全面的功能。"
+  },
   "gemini-2.5-pro-exp-03-25": {
     "description": "Gemini 2.5 Pro Experimental 是 Google 最先进的思维模型，能够对代码、数学和STEM领域的复杂问题进行推理，以及使用长上下文分析大型数据集、代码库和文档。"
   },
@@ -1256,29 +1262,26 @@
   "gpt-4o-realtime-preview-2024-12-17": {
     "description": "GPT-4o 实时版本，支持音频和文本实时输入输出"
   },
+  "gpt-image-1": {
+    "description": "OpenAI 最新的图像生成模型，支持高质量图像生成、图像编辑及多图片输入，可生成更高质量的图像"
+  },
   "grok-2-1212": {
     "description": "该模型在准确性、指令遵循和多语言能力方面有所改进。"
   },
   "grok-2-vision-1212": {
     "description": "该模型在准确性、指令遵循和多语言能力方面有所改进。"
   },
-  "grok-3-beta": {
+  "grok-3": {
     "description": "旗舰级模型，擅长数据提取、编程和文本摘要等企业级应用，拥有金融、医疗、法律和科学等领域的深厚知识。"
   },
-  "grok-3-fast-beta": {
+  "grok-3-fast": {
     "description": "旗舰级模型，擅长数据提取、编程和文本摘要等企业级应用，拥有金融、医疗、法律和科学等领域的深厚知识。"
   },
-  "grok-3-mini-beta": {
+  "grok-3-mini": {
     "description": "轻量级模型，回话前会先思考。运行快速、智能，适用于不需要深层领域知识的逻辑任务，并能获取原始的思维轨迹。"
   },
-  "grok-3-mini-fast-beta": {
+  "grok-3-mini-fast": {
     "description": "轻量级模型，回话前会先思考。运行快速、智能，适用于不需要深层领域知识的逻辑任务，并能获取原始的思维轨迹。"
-  },
-  "grok-beta": {
-    "description": "拥有与 Grok 2 相当的性能，但具有更高的效率、速度和功能。"
-  },
-  "grok-vision-beta": {
-    "description": "最新的图像理解模型，可以处理各种各样的视觉信息，包括文档、图表、截图和照片等。"
   },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B 是一款合并了多个顶尖模型的创意与智能相结合的语言模型。"
@@ -1321,6 +1324,9 @@
   },
   "hunyuan-t1-latest": {
     "description": "业内首个超大规模 Hybrid-Transformer-Mamba 推理模型，扩展推理能力，超强解码速度，进一步对齐人类偏好。"
+  },
+  "hunyuan-t1-vision": {
+    "description": "混元多模态理解深度思考模型，支持多模态原生长思维链，擅长处理各种图片推理场景，在理科难题上相比快思考模型全面提升。"
   },
   "hunyuan-translation": {
     "description": "支持中文和英语、日语、法语、葡萄牙语、西班牙语、土耳其语、俄语、阿拉伯语、韩语、意大利语、德语、越南语、马来语、印尼语15种语言互译，基于多场景翻译评测集自动化评估COMET评分，在十余种常用语种中外互译能力上整体优于市场同规模模型。"

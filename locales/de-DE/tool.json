@@ -7,6 +7,14 @@
     "images": "Bilder:",
     "prompt": "Hinweiswort"
   },
+  "gptImage": {
+    "autoGenerate": "Automatisch generieren",
+    "downloading": "Der Link zum von GPT Image generierten Bild hat eine begrenzte Gültigkeit. Das Bild wird lokal zwischengespeichert...",
+    "generate": "Generieren",
+    "generating": "Wird generiert...",
+    "images": "Bilder:",
+    "prompt": "Eingabeaufforderung"
+  },
   "localFiles": {
     "file": "Datei",
     "folder": "Ordner",

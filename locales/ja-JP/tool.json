@@ -7,6 +7,14 @@
     "images": "画像:",
     "prompt": "プロンプト"
   },
+  "gptImage": {
+    "autoGenerate": "自動生成",
+    "downloading": "GPT Image 生成の画像リンクの有効期限は限られています。画像をローカルにキャッシュしています...",
+    "generate": "生成",
+    "generating": "生成中...",
+    "images": "画像:",
+    "prompt": "プロンプト"
+  },
   "localFiles": {
     "file": "ファイル",
     "folder": "フォルダー",

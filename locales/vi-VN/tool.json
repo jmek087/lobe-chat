@@ -7,6 +7,14 @@
     "images": "Hình ảnh:",
     "prompt": "Từ khóa"
   },
+  "gptImage": {
+    "autoGenerate": "Tự động tạo",
+    "downloading": "Liên kết hình ảnh do GPT Image tạo có thời gian hiệu lực hạn chế, đang lưu trữ hình ảnh vào máy tính...",
+    "generate": "Tạo",
+    "generating": "Đang tạo...",
+    "images": "Hình ảnh:",
+    "prompt": "Từ khóa"
+  },
   "localFiles": {
     "file": "Tệp",
     "folder": "Thư mục",

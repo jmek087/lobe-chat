@@ -1028,6 +1028,12 @@
   "gemini-2.5-flash-preview-04-17": {
     "description": "Gemini 2.5 Flash Preview to najbardziej opłacalny model Google, oferujący wszechstronne funkcje."
   },
+  "gemini-2.5-flash-preview-04-17-thinking": {
+    "description": "Gemini 2.5 Flash Preview to najbardziej opłacalny model Google, oferujący wszechstronne funkcje."
+  },
+  "gemini-2.5-flash-preview-05-20": {
+    "description": "Gemini 2.5 Flash Preview to najbardziej opłacalny model Google, oferujący wszechstronne funkcje."
+  },
   "gemini-2.5-pro-exp-03-25": {
     "description": "Gemini 2.5 Pro Experimental to najnowocześniejszy model myślenia Google, zdolny do wnioskowania w zakresie kodu, matematyki i złożonych problemów w dziedzinie STEM, a także do analizy dużych zbiorów danych, repozytoriów kodu i dokumentów, wykorzystując długi kontekst."
   },
@@ -1256,29 +1262,26 @@
   "gpt-4o-realtime-preview-2024-12-17": {
     "description": "Wersja na żywo GPT-4o, obsługująca wejście i wyjście audio oraz tekstowe w czasie rzeczywistym."
   },
+  "gpt-image-1": {
+    "description": "Najnowocześniejszy model generowania obrazów OpenAI, wspierający generowanie obrazów wysokiej jakości, edycję obrazów oraz wiele wejść obrazowych, zdolny do tworzenia obrazów o wyższej jakości."
+  },
   "grok-2-1212": {
     "description": "Model ten poprawił dokładność, przestrzeganie instrukcji oraz zdolności wielojęzyczne."
   },
   "grok-2-vision-1212": {
     "description": "Model ten poprawił dokładność, przestrzeganie instrukcji oraz zdolności wielojęzyczne."
   },
-  "grok-3-beta": {
-    "description": "Flagowy model, specjalizujący się w ekstrakcji danych, programowaniu i podsumowywaniu tekstów w zastosowaniach korporacyjnych, posiadający głęboką wiedzę w dziedzinach takich jak finanse, medycyna, prawo i nauka."
+  "grok-3": {
+    "description": "Flagowy model, doskonały w ekstrakcji danych, programowaniu i podsumowywaniu tekstu w zastosowaniach korporacyjnych, posiadający głęboką wiedzę w dziedzinach finansów, medycyny, prawa i nauki."
   },
-  "grok-3-fast-beta": {
-    "description": "Flagowy model, specjalizujący się w ekstrakcji danych, programowaniu i podsumowywaniu tekstów w zastosowaniach korporacyjnych, posiadający głęboką wiedzę w dziedzinach takich jak finanse, medycyna, prawo i nauka."
+  "grok-3-fast": {
+    "description": "Flagowy model, doskonały w ekstrakcji danych, programowaniu i podsumowywaniu tekstu w zastosowaniach korporacyjnych, posiadający głęboką wiedzę w dziedzinach finansów, medycyny, prawa i nauki."
   },
-  "grok-3-mini-beta": {
-    "description": "Lekki model, który przed rozmową najpierw przemyśli. Działa szybko i inteligentnie, nadaje się do logicznych zadań, które nie wymagają głębokiej wiedzy w danej dziedzinie, i potrafi uchwycić pierwotne ścieżki myślenia."
+  "grok-3-mini": {
+    "description": "Lekki model, który najpierw myśli przed rozmową. Działa szybko i inteligentnie, odpowiedni do zadań logicznych, które nie wymagają głębokiej wiedzy w danej dziedzinie, i potrafi uchwycić pierwotne ścieżki myślenia."
   },
-  "grok-3-mini-fast-beta": {
-    "description": "Lekki model, który przed rozmową najpierw przemyśli. Działa szybko i inteligentnie, nadaje się do logicznych zadań, które nie wymagają głębokiej wiedzy w danej dziedzinie, i potrafi uchwycić pierwotne ścieżki myślenia."
-  },
-  "grok-beta": {
-    "description": "Oferuje wydajność porównywalną z Grok 2, ale z wyższą efektywnością, prędkością i funkcjonalnością."
-  },
-  "grok-vision-beta": {
-    "description": "Najnowszy model rozumienia obrazów, który potrafi przetwarzać różnorodne informacje wizualne, w tym dokumenty, wykresy, zrzuty ekranu i zdjęcia."
+  "grok-3-mini-fast": {
+    "description": "Lekki model, który najpierw myśli przed rozmową. Działa szybko i inteligentnie, odpowiedni do zadań logicznych, które nie wymagają głębokiej wiedzy w danej dziedzinie, i potrafi uchwycić pierwotne ścieżki myślenia."
   },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B to model językowy łączący kreatywność i inteligencję, zintegrowany z wieloma wiodącymi modelami."
@@ -1321,6 +1324,9 @@
   },
   "hunyuan-t1-latest": {
     "description": "Pierwszy na świecie ultra-duży model wnioskowania Hybrid-Transformer-Mamba, rozszerzający zdolności wnioskowania, z niezwykle szybkim dekodowaniem, lepiej dostosowany do ludzkich preferencji."
+  },
+  "hunyuan-t1-vision": {
+    "description": "Model głębokiego myślenia z wieloma modalnościami, wspierający natywne łańcuchy myślenia w różnych modalnościach, doskonały w rozwiązywaniu różnych scenariuszy wnioskowania obrazów, znacznie poprawiający wyniki w trudnych problemach naukowych w porównaniu do modeli szybkiego myślenia."
   },
   "hunyuan-translation": {
     "description": "Obsługuje tłumaczenie między 15 językami, w tym chińskim, angielskim, japońskim, francuskim, portugalskim, hiszpańskim, tureckim, rosyjskim, arabskim, koreańskim, włoskim, niemieckim, wietnamskim, malajskim i indonezyjskim, opartym na automatycznej ocenie COMET w oparciu o zestaw testowy do tłumaczenia w różnych scenariuszach, wykazując ogólnie lepsze zdolności tłumaczeniowe w porównaniu do modeli o podobnej skali na rynku."

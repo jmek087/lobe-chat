@@ -1028,6 +1028,12 @@
   "gemini-2.5-flash-preview-04-17": {
     "description": "Gemini 2.5 Flash Preview là mô hình có giá trị tốt nhất của Google, cung cấp đầy đủ các tính năng."
   },
+  "gemini-2.5-flash-preview-04-17-thinking": {
+    "description": "Gemini 2.5 Flash Preview là mô hình có giá trị tốt nhất của Google, cung cấp đầy đủ các chức năng."
+  },
+  "gemini-2.5-flash-preview-05-20": {
+    "description": "Gemini 2.5 Flash Preview là mô hình có giá trị tốt nhất của Google, cung cấp đầy đủ các chức năng."
+  },
   "gemini-2.5-pro-exp-03-25": {
     "description": "Gemini 2.5 Pro Experimental là mô hình tư duy tiên tiến nhất của Google, có khả năng suy luận về mã, toán học và các vấn đề phức tạp trong lĩnh vực STEM, đồng thời có thể phân tích các tập dữ liệu lớn, kho mã và tài liệu bằng cách sử dụng ngữ cảnh dài."
   },
@@ -1256,29 +1262,26 @@
   "gpt-4o-realtime-preview-2024-12-17": {
     "description": "Phiên bản thời gian thực của GPT-4o, hỗ trợ đầu vào và đầu ra âm thanh và văn bản theo thời gian thực."
   },
+  "gpt-image-1": {
+    "description": "Mô hình tạo hình ảnh mới nhất của OpenAI, hỗ trợ tạo hình ảnh chất lượng cao, chỉnh sửa hình ảnh và đầu vào nhiều hình ảnh, có thể tạo ra hình ảnh chất lượng cao hơn."
+  },
   "grok-2-1212": {
     "description": "Mô hình này đã được cải thiện về độ chính xác, khả năng tuân thủ hướng dẫn và khả năng đa ngôn ngữ."
   },
   "grok-2-vision-1212": {
     "description": "Mô hình này đã được cải thiện về độ chính xác, khả năng tuân thủ hướng dẫn và khả năng đa ngôn ngữ."
   },
-  "grok-3-beta": {
-    "description": "Mô hình hàng đầu, chuyên về trích xuất dữ liệu, lập trình và tóm tắt văn bản cho các ứng dụng doanh nghiệp, có kiến thức sâu rộng trong các lĩnh vực tài chính, y tế, pháp lý và khoa học."
+  "grok-3": {
+    "description": "Mô hình hàng đầu, xuất sắc trong việc trích xuất dữ liệu, lập trình và tóm tắt văn bản cho các ứng dụng doanh nghiệp, có kiến thức sâu rộng trong các lĩnh vực tài chính, y tế, pháp lý và khoa học."
   },
-  "grok-3-fast-beta": {
-    "description": "Mô hình hàng đầu, chuyên về trích xuất dữ liệu, lập trình và tóm tắt văn bản cho các ứng dụng doanh nghiệp, có kiến thức sâu rộng trong các lĩnh vực tài chính, y tế, pháp lý và khoa học."
+  "grok-3-fast": {
+    "description": "Mô hình hàng đầu, xuất sắc trong việc trích xuất dữ liệu, lập trình và tóm tắt văn bản cho các ứng dụng doanh nghiệp, có kiến thức sâu rộng trong các lĩnh vực tài chính, y tế, pháp lý và khoa học."
   },
-  "grok-3-mini-beta": {
-    "description": "Mô hình nhẹ, sẽ suy nghĩ trước khi trò chuyện. Chạy nhanh, thông minh, phù hợp cho các nhiệm vụ logic không cần kiến thức chuyên sâu, và có thể thu thập được các dấu vết tư duy ban đầu."
+  "grok-3-mini": {
+    "description": "Mô hình nhẹ, sẽ suy nghĩ trước khi trò chuyện. Chạy nhanh, thông minh, phù hợp cho các nhiệm vụ logic không cần kiến thức chuyên sâu, và có thể thu thập được các dấu vết tư duy nguyên bản."
   },
-  "grok-3-mini-fast-beta": {
-    "description": "Mô hình nhẹ, sẽ suy nghĩ trước khi trò chuyện. Chạy nhanh, thông minh, phù hợp cho các nhiệm vụ logic không cần kiến thức chuyên sâu, và có thể thu thập được các dấu vết tư duy ban đầu."
-  },
-  "grok-beta": {
-    "description": "Có hiệu suất tương đương với Grok 2, nhưng hiệu quả, tốc độ và tính năng cao hơn."
-  },
-  "grok-vision-beta": {
-    "description": "Mô hình hiểu hình ảnh mới nhất, có khả năng xử lý nhiều loại thông tin hình ảnh khác nhau, bao gồm tài liệu, biểu đồ, ảnh chụp màn hình và ảnh."
+  "grok-3-mini-fast": {
+    "description": "Mô hình nhẹ, sẽ suy nghĩ trước khi trò chuyện. Chạy nhanh, thông minh, phù hợp cho các nhiệm vụ logic không cần kiến thức chuyên sâu, và có thể thu thập được các dấu vết tư duy nguyên bản."
   },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B là mô hình ngôn ngữ kết hợp giữa sáng tạo và trí thông minh, kết hợp nhiều mô hình hàng đầu."
@@ -1321,6 +1324,9 @@
   },
   "hunyuan-t1-latest": {
     "description": "Mô hình suy luận Hybrid-Transformer-Mamba quy mô siêu lớn đầu tiên trong ngành, mở rộng khả năng suy luận, tốc độ giải mã cực nhanh, và tiếp tục điều chỉnh theo sở thích của con người."
+  },
+  "hunyuan-t1-vision": {
+    "description": "Mô hình hiểu biết đa phương thức Hỗn Nguyên, hỗ trợ chuỗi tư duy nguyên bản đa phương thức, xuất sắc trong việc xử lý các tình huống suy luận hình ảnh, cải thiện toàn diện so với mô hình tư duy nhanh trong các bài toán khoa học."
   },
   "hunyuan-translation": {
     "description": "Hỗ trợ dịch giữa 15 ngôn ngữ bao gồm tiếng Trung, tiếng Anh, tiếng Nhật, tiếng Pháp, tiếng Bồ Đào Nha, tiếng Tây Ban Nha, tiếng Thổ Nhĩ Kỳ, tiếng Nga, tiếng Ả Rập, tiếng Hàn, tiếng Ý, tiếng Đức, tiếng Việt, tiếng Mã Lai và tiếng Indonesia, dựa trên bộ đánh giá dịch tự động hóa COMET, có khả năng dịch giữa các ngôn ngữ phổ biến tốt hơn so với các mô hình cùng quy mô trên thị trường."

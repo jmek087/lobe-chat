@@ -7,6 +7,14 @@
     "images": "Afbeeldingen:",
     "prompt": "prompt"
   },
+  "gptImage": {
+    "autoGenerate": "Automatisch genereren",
+    "downloading": "De link naar de door GPT gegenereerde afbeelding is tijdelijk, de afbeelding wordt lokaal opgeslagen...",
+    "generate": "Genereren",
+    "generating": "Bezig met genereren...",
+    "images": "Afbeeldingen:",
+    "prompt": "Prompt"
+  },
   "localFiles": {
     "file": "Bestand",
     "folder": "Map",

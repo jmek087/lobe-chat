@@ -1028,6 +1028,12 @@
   "gemini-2.5-flash-preview-04-17": {
     "description": "Gemini 2.5 Flash Preview is Google's most cost-effective model, offering a comprehensive set of features."
   },
+  "gemini-2.5-flash-preview-04-17-thinking": {
+    "description": "Gemini 2.5 Flash Preview is Google's most cost-effective model, offering comprehensive features."
+  },
+  "gemini-2.5-flash-preview-05-20": {
+    "description": "Gemini 2.5 Flash Preview is Google's most cost-effective model, offering comprehensive features."
+  },
   "gemini-2.5-pro-exp-03-25": {
     "description": "Gemini 2.5 Pro Experimental is Google's most advanced thinking model, capable of reasoning about complex problems in code, mathematics, and STEM fields, as well as analyzing large datasets, codebases, and documents using long context."
   },
@@ -1256,29 +1262,26 @@
   "gpt-4o-realtime-preview-2024-12-17": {
     "description": "GPT-4o real-time version, supporting real-time audio and text input and output."
   },
+  "gpt-image-1": {
+    "description": "OpenAI's latest image generation model supports high-quality image generation, image editing, and multiple image inputs, capable of producing higher quality images."
+  },
   "grok-2-1212": {
     "description": "This model has improved in accuracy, instruction adherence, and multilingual capabilities."
   },
   "grok-2-vision-1212": {
     "description": "This model has improved in accuracy, instruction adherence, and multilingual capabilities."
   },
-  "grok-3-beta": {
-    "description": "A flagship model, proficient in data extraction, programming, and text summarization for enterprise applications, with deep knowledge in fields such as finance, healthcare, law, and science."
+  "grok-3": {
+    "description": "A flagship model that excels in data extraction, programming, and text summarization for enterprise applications, with deep knowledge in finance, healthcare, law, and science."
   },
-  "grok-3-fast-beta": {
-    "description": "A flagship model, proficient in data extraction, programming, and text summarization for enterprise applications, with deep knowledge in fields such as finance, healthcare, law, and science."
+  "grok-3-fast": {
+    "description": "A flagship model that excels in data extraction, programming, and text summarization for enterprise applications, with deep knowledge in finance, healthcare, law, and science."
   },
-  "grok-3-mini-beta": {
-    "description": "A lightweight model that thinks before responding. It operates quickly and intelligently, suitable for logical tasks that do not require deep domain knowledge, while capturing the raw thought process."
+  "grok-3-mini": {
+    "description": "A lightweight model that thinks before responding. It runs quickly and intelligently, suitable for logical tasks that do not require deep domain knowledge, and can capture the original thought process."
   },
-  "grok-3-mini-fast-beta": {
-    "description": "A lightweight model that thinks before responding. It operates quickly and intelligently, suitable for logical tasks that do not require deep domain knowledge, while capturing the raw thought process."
-  },
-  "grok-beta": {
-    "description": "Offers performance comparable to Grok 2 but with higher efficiency, speed, and functionality."
-  },
-  "grok-vision-beta": {
-    "description": "The latest image understanding model that can handle a wide range of visual information, including documents, charts, screenshots, and photographs."
+  "grok-3-mini-fast": {
+    "description": "A lightweight model that thinks before responding. It runs quickly and intelligently, suitable for logical tasks that do not require deep domain knowledge, and can capture the original thought process."
   },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B is a language model that combines creativity and intelligence by merging multiple top models."
@@ -1321,6 +1324,9 @@
   },
   "hunyuan-t1-latest": {
     "description": "The industry's first ultra-large-scale Hybrid-Transformer-Mamba inference model, enhancing reasoning capabilities with exceptional decoding speed, further aligning with human preferences."
+  },
+  "hunyuan-t1-vision": {
+    "description": "Hunyuan is a multimodal understanding model that supports native long-thinking chains. It excels in handling various image reasoning scenarios and significantly improves performance on scientific problems compared to fast-thinking models."
   },
   "hunyuan-translation": {
     "description": "Supports translation between Chinese and 15 other languages including English, Japanese, French, Portuguese, Spanish, Turkish, Russian, Arabic, Korean, Italian, German, Vietnamese, Malay, and Indonesian. It is based on a multi-scenario translation evaluation set with automated COMET scoring, demonstrating overall superior translation capabilities compared to similarly scaled models in the market."

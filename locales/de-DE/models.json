@@ -1028,6 +1028,12 @@
   "gemini-2.5-flash-preview-04-17": {
     "description": "Gemini 2.5 Flash Preview ist das kosteneffizienteste Modell von Google und bietet umfassende Funktionen."
   },
+  "gemini-2.5-flash-preview-04-17-thinking": {
+    "description": "Gemini 2.5 Flash Preview ist das kosteneffizienteste Modell von Google und bietet umfassende Funktionen."
+  },
+  "gemini-2.5-flash-preview-05-20": {
+    "description": "Gemini 2.5 Flash Preview ist das kosteneffizienteste Modell von Google und bietet umfassende Funktionen."
+  },
   "gemini-2.5-pro-exp-03-25": {
     "description": "Gemini 2.5 Pro Experimental ist Googles fortschrittlichstes Denkmodell, das in der Lage ist, komplexe Probleme in den Bereichen Code, Mathematik und STEM zu analysieren. Es kann auch lange Kontexte nutzen, um große Datensätze, Codebasen und Dokumente zu analysieren."
   },
@@ -1256,29 +1262,26 @@
   "gpt-4o-realtime-preview-2024-12-17": {
     "description": "Echtzeitversion von GPT-4o, unterstützt Audio- und Texteingabe sowie -ausgabe in Echtzeit."
   },
+  "gpt-image-1": {
+    "description": "Das neueste Bildgenerierungsmodell von OpenAI unterstützt die Generierung von hochwertigen Bildern, Bildbearbeitung und mehrere Bildeingaben und kann Bilder von höherer Qualität erzeugen."
+  },
   "grok-2-1212": {
     "description": "Dieses Modell hat Verbesserungen in Bezug auf Genauigkeit, Befolgung von Anweisungen und Mehrsprachigkeit erfahren."
   },
   "grok-2-vision-1212": {
     "description": "Dieses Modell hat Verbesserungen in Bezug auf Genauigkeit, Befolgung von Anweisungen und Mehrsprachigkeit erfahren."
   },
-  "grok-3-beta": {
-    "description": "Flaggschiff-Modell, das sich auf Datenextraktion, Programmierung und Textzusammenfassungen für Unternehmensanwendungen spezialisiert hat und über umfassendes Wissen in den Bereichen Finanzen, Gesundheitswesen, Recht und Wissenschaft verfügt."
+  "grok-3": {
+    "description": "Das Flaggschiff-Modell ist spezialisiert auf Datenextraktion, Programmierung und Textzusammenfassungen für Unternehmensanwendungen und verfügt über umfassendes Wissen in den Bereichen Finanzen, Gesundheitswesen, Recht und Wissenschaft."
   },
-  "grok-3-fast-beta": {
-    "description": "Flaggschiff-Modell, das sich auf Datenextraktion, Programmierung und Textzusammenfassungen für Unternehmensanwendungen spezialisiert hat und über umfassendes Wissen in den Bereichen Finanzen, Gesundheitswesen, Recht und Wissenschaft verfügt."
+  "grok-3-fast": {
+    "description": "Das Flaggschiff-Modell ist spezialisiert auf Datenextraktion, Programmierung und Textzusammenfassungen für Unternehmensanwendungen und verfügt über umfassendes Wissen in den Bereichen Finanzen, Gesundheitswesen, Recht und Wissenschaft."
   },
-  "grok-3-mini-beta": {
-    "description": "Leichtgewichtiges Modell, das vor dem Gespräch nachdenkt. Es läuft schnell und intelligent und eignet sich für logische Aufgaben, die kein tiefes Fachwissen erfordern, und kann die ursprünglichen Denkprozesse erfassen."
+  "grok-3-mini": {
+    "description": "Ein leichtgewichtiges Modell, das vor dem Gespräch nachdenkt. Es läuft schnell und intelligent und eignet sich für logische Aufgaben, die kein tiefes Fachwissen erfordern, und kann die ursprünglichen Denkprozesse erfassen."
   },
-  "grok-3-mini-fast-beta": {
-    "description": "Leichtgewichtiges Modell, das vor dem Gespräch nachdenkt. Es läuft schnell und intelligent und eignet sich für logische Aufgaben, die kein tiefes Fachwissen erfordern, und kann die ursprünglichen Denkprozesse erfassen."
-  },
-  "grok-beta": {
-    "description": "Bietet eine Leistung, die mit Grok 2 vergleichbar ist, jedoch mit höherer Effizienz, Geschwindigkeit und Funktionalität."
-  },
-  "grok-vision-beta": {
-    "description": "Das neueste Modell zur Bildverständnis, das eine Vielzahl von visuellen Informationen verarbeiten kann, einschließlich Dokumenten, Diagrammen, Screenshots und Fotos."
+  "grok-3-mini-fast": {
+    "description": "Ein leichtgewichtiges Modell, das vor dem Gespräch nachdenkt. Es läuft schnell und intelligent und eignet sich für logische Aufgaben, die kein tiefes Fachwissen erfordern, und kann die ursprünglichen Denkprozesse erfassen."
   },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B ist ein Sprachmodell, das Kreativität und Intelligenz kombiniert und mehrere führende Modelle integriert."
@@ -1321,6 +1324,9 @@
   },
   "hunyuan-t1-latest": {
     "description": "Das erste ultra-skalierbare Hybrid-Transformer-Mamba-Inferenzmodell der Branche, das die Inferenzfähigkeiten erweitert, eine extrem hohe Dekodierungsgeschwindigkeit bietet und weiter auf menschliche Präferenzen abgestimmt ist."
+  },
+  "hunyuan-t1-vision": {
+    "description": "Das Hunyuan-Modell für multimodale tiefgreifende Denkprozesse unterstützt multimodale, native Denkketten und ist besonders gut geeignet für verschiedene Bildinferenzszenarien, wobei es im Vergleich zu schnellen Denkmodellen bei naturwissenschaftlichen Problemen umfassende Verbesserungen bietet."
   },
   "hunyuan-translation": {
     "description": "Unterstützt die Übersetzung zwischen Chinesisch und Englisch, Japanisch, Französisch, Portugiesisch, Spanisch, Türkisch, Russisch, Arabisch, Koreanisch, Italienisch, Deutsch, Vietnamesisch, Malaiisch und Indonesisch in 15 Sprachen. Basierend auf einem automatisierten Bewertungs-Framework COMET, das auf mehrsprachigen Übersetzungsbewertungsszenarien basiert, übertrifft es insgesamt die Übersetzungsfähigkeiten anderer Modelle ähnlicher Größe auf dem Markt."

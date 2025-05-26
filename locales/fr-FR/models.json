@@ -1028,6 +1028,12 @@
   "gemini-2.5-flash-preview-04-17": {
     "description": "Gemini 2.5 Flash Preview est le modèle le plus rentable de Google, offrant des fonctionnalités complètes."
   },
+  "gemini-2.5-flash-preview-04-17-thinking": {
+    "description": "Gemini 2.5 Flash Preview est le modèle le plus rentable de Google, offrant des fonctionnalités complètes."
+  },
+  "gemini-2.5-flash-preview-05-20": {
+    "description": "Gemini 2.5 Flash Preview est le modèle le plus rentable de Google, offrant des fonctionnalités complètes."
+  },
   "gemini-2.5-pro-exp-03-25": {
     "description": "Gemini 2.5 Pro Experimental est le modèle de pensée le plus avancé de Google, capable de raisonner sur des problèmes complexes en code, mathématiques et dans les domaines STEM, tout en utilisant un long contexte pour analyser de grands ensembles de données, des bibliothèques de code et des documents."
   },
@@ -1256,29 +1262,26 @@
   "gpt-4o-realtime-preview-2024-12-17": {
     "description": "Version en temps réel de GPT-4o, prenant en charge les entrées et sorties audio et textuelles en temps réel."
   },
+  "gpt-image-1": {
+    "description": "Le dernier modèle de génération d'images d'OpenAI, prenant en charge la génération d'images de haute qualité, l'édition d'images et l'entrée de plusieurs images, capable de générer des images de qualité supérieure."
+  },
   "grok-2-1212": {
     "description": "Ce modèle a été amélioré en termes de précision, de respect des instructions et de capacités multilingues."
   },
   "grok-2-vision-1212": {
     "description": "Ce modèle a été amélioré en termes de précision, de respect des instructions et de capacités multilingues."
   },
-  "grok-3-beta": {
-    "description": "Modèle phare, spécialisé dans l'extraction de données, la programmation et le résumé de texte pour des applications d'entreprise, avec une connaissance approfondie des domaines financier, médical, juridique et scientifique."
+  "grok-3": {
+    "description": "Modèle phare, spécialisé dans l'extraction de données, la programmation et le résumé de texte pour des applications d'entreprise, possédant une connaissance approfondie dans des domaines tels que la finance, la santé, le droit et la science."
   },
-  "grok-3-fast-beta": {
-    "description": "Modèle phare, spécialisé dans l'extraction de données, la programmation et le résumé de texte pour des applications d'entreprise, avec une connaissance approfondie des domaines financier, médical, juridique et scientifique."
+  "grok-3-fast": {
+    "description": "Modèle phare, spécialisé dans l'extraction de données, la programmation et le résumé de texte pour des applications d'entreprise, possédant une connaissance approfondie dans des domaines tels que la finance, la santé, le droit et la science."
   },
-  "grok-3-mini-beta": {
-    "description": "Modèle léger, qui réfléchit avant de répondre. Rapide et intelligent, il est adapté aux tâches logiques ne nécessitant pas de connaissances approfondies dans un domaine, tout en permettant de capturer les pensées brutes."
+  "grok-3-mini": {
+    "description": "Modèle léger, qui réfléchit avant de répondre. Fonctionne rapidement et intelligemment, adapté aux tâches logiques ne nécessitant pas de connaissances approfondies, tout en capturant les traces de pensée originales."
   },
-  "grok-3-mini-fast-beta": {
-    "description": "Modèle léger, qui réfléchit avant de répondre. Rapide et intelligent, il est adapté aux tâches logiques ne nécessitant pas de connaissances approfondies dans un domaine, tout en permettant de capturer les pensées brutes."
-  },
-  "grok-beta": {
-    "description": "Offre des performances comparables à Grok 2, mais avec une efficacité, une vitesse et des fonctionnalités supérieures."
-  },
-  "grok-vision-beta": {
-    "description": "Le dernier modèle de compréhension d'image, capable de traiter une variété d'informations visuelles, y compris des documents, des graphiques, des captures d'écran et des photos."
+  "grok-3-mini-fast": {
+    "description": "Modèle léger, qui réfléchit avant de répondre. Fonctionne rapidement et intelligemment, adapté aux tâches logiques ne nécessitant pas de connaissances approfondies, tout en capturant les traces de pensée originales."
   },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B est un modèle linguistique combinant créativité et intelligence, intégrant plusieurs modèles de pointe."
@@ -1321,6 +1324,9 @@
   },
   "hunyuan-t1-latest": {
     "description": "Le premier modèle d'inférence Hybrid-Transformer-Mamba à grande échelle de l'industrie, qui étend les capacités d'inférence, offre une vitesse de décodage exceptionnelle et aligne davantage les préférences humaines."
+  },
+  "hunyuan-t1-vision": {
+    "description": "Modèle de réflexion profonde multimodale Hunyuan, prenant en charge des chaînes de pensée natives multimodales, spécialisé dans le traitement de divers scénarios de raisonnement d'image, offrant une amélioration globale par rapport aux modèles de pensée rapide sur des problèmes scientifiques."
   },
   "hunyuan-translation": {
     "description": "Supporte la traduction entre le chinois et l'anglais, le japonais, le français, le portugais, l'espagnol, le turc, le russe, l'arabe, le coréen, l'italien, l'allemand, le vietnamien, le malais et l'indonésien, soit 15 langues au total, avec une évaluation automatisée basée sur le score COMET à partir d'un ensemble d'évaluation de traduction multi-scénarios, montrant une capacité de traduction globale supérieure à celle des modèles de taille similaire sur le marché."

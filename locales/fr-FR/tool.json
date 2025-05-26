@@ -7,6 +7,14 @@
     "images": "Images :",
     "prompt": "Mot de rappel"
   },
+  "gptImage": {
+    "autoGenerate": "Génération automatique",
+    "downloading": "Le lien de l'image générée par GPT est temporaire, en cours de mise en cache de l'image localement...",
+    "generate": "Générer",
+    "generating": "Génération en cours...",
+    "images": "Images :",
+    "prompt": "Invite"
+  },
   "localFiles": {
     "file": "Fichier",
     "folder": "Dossier",

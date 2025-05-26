@@ -7,6 +7,14 @@
     "images": "Görseller:",
     "prompt": "İpucu"
   },
+  "gptImage": {
+    "autoGenerate": "Otomatik Oluştur",
+    "downloading": "GPT Görüntü tarafından oluşturulan resim bağlantısının geçerlilik süresi sınırlıdır, resmi yerel olarak önbelleğe alınıyor...",
+    "generate": "Oluştur",
+    "generating": "Oluşturuluyor...",
+    "images": "Resimler:",
+    "prompt": "İpucu"
+  },
   "localFiles": {
     "file": "Dosya",
     "folder": "Klasör",
