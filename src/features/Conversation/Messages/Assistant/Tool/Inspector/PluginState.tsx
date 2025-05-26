@@ -10,10 +10,11 @@ export interface FunctionMessageProps {
 
 const PluginState = memo<FunctionMessageProps>(({ toolCallId }) => {
   const toolMessage = useChatStore(chatSelectors.getMessageByToolCallId(toolCallId));
+  const pluginState = toolMessage?.pluginState || {};
 
   return (
     <Highlighter language={'json'} style={{ maxHeight: 200, maxWidth: 800, overflow: 'scroll' }}>
-      {JSON.stringify(toolMessage?.pluginState, null, 2)}
+      {JSON.stringify(pluginState, null, 2)}
     </Highlighter>
   );
 });
