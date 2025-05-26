@@ -4,7 +4,12 @@ import { StateCreator } from 'zustand/vanilla';
 
 import { createDevtools } from '../middleware/createDevtools';
 import { ToolStoreState, initialState } from './initialState';
-import { BuiltinToolAction, createBuiltinToolSlice } from './slices/builtin';
+import {
+  BuiltinToolAction,
+  GptImageToolAction,
+  createBuiltinToolSlice,
+  createGptImageToolSlice,
+} from './slices/builtin';
 import { CustomPluginAction, createCustomPluginSlice } from './slices/customPlugin';
 import { PluginAction, createPluginSlice } from './slices/plugin';
 import { PluginStoreAction, createPluginStoreSlice } from './slices/store';
@@ -15,7 +20,8 @@ export type ToolStore = ToolStoreState &
   CustomPluginAction &
   PluginAction &
   PluginStoreAction &
-  BuiltinToolAction;
+  BuiltinToolAction &
+  GptImageToolAction;
 
 const createStore: StateCreator<ToolStore, [['zustand/devtools', never]]> = (...parameters) => ({
   ...initialState,
@@ -23,6 +29,7 @@ const createStore: StateCreator<ToolStore, [['zustand/devtools', never]]> = (...
   ...createCustomPluginSlice(...parameters),
   ...createPluginStoreSlice(...parameters),
   ...createBuiltinToolSlice(...parameters),
+  ...createGptImageToolSlice(...parameters),
 });
 
 //  ===============  实装 useStore ============ //
