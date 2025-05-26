@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { memo, useEffect } from 'react';
 
+import { enableNextAuth } from '@/const/auth';
 import { useUserStore } from '@/store/user';
 import { authSelectors } from '@/store/user/selectors';
 
@@ -26,6 +27,17 @@ const Redirect = memo<RedirectProps>(({ setLoadingStage }) => {
     router.replace('/chat');
   };
 
+  const navToSignIn = () => {
+    setLoadingStage(AppLoadingStage.GoToChat);
+    // 如果启用了NextAuth，重定向到登录页面
+    if (enableNextAuth) {
+      router.replace('/next-auth/signin');
+    } else {
+      // 如果没有启用NextAuth，则保持原有行为
+      router.replace('/chat');
+    }
+  };
+
   useEffect(() => {
     // if user auth state is not ready, wait for loading
     if (!isLoaded) {
@@ -35,7 +47,8 @@ const Redirect = memo<RedirectProps>(({ setLoadingStage }) => {
 
     // this mean user is definitely not login
     if (!isLogin) {
-      navToChat();
+      // 修改：未登录用户重定向到signin页面
+      navToSignIn();
       return;
     }
 
