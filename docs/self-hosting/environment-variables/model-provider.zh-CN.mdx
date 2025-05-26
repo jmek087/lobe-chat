@@ -119,6 +119,36 @@ LobeChat 在部署时提供了丰富的模型服务商相关的环境变量，�
 - 默认值：`-`
 - 示例：`-all,+gemini-1.5-flash-latest,+gemini-1.5-pro-latest`
 
+## Vertex AI
+
+### `ENABLED_VERTEXAI`
+
+- 类型：可选
+- 描述：当设为 1 时启用 Vertex AI 服务
+- 默认值：`0`
+- 示例：`1`
+
+### `VERTEXAI_CREDENTIALS`
+
+- 类型：必选
+- 描述：这是你在 Google Cloud Platform 创建的服务账号密钥，需要完整的 JSON 字符串格式
+- 默认值：-
+- 示例：`{ "type": "service_account", "project_id": "your-project-id", "private_key_id": "key-id", "private_key": "-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY\n-----END PRIVATE KEY-----\n", ... }`
+
+### `VERTEXAI_LOCATION`
+
+- 类型：可选
+- 描述：Vertex AI 服务的地区设置
+- 默认值：-
+- 示例：`us-central1`
+
+### `VERTEXAI_PROJECT`
+
+- 类型：可选
+- 描述：Google Cloud 项目 ID，如果已经在凭证文件中包含则可省略
+- 默认值：-
+- 示例：`your-project-id`
+
 ## Anthropic AI
 
 ### `ANTHROPIC_API_KEY`
