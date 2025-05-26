@@ -7,6 +7,14 @@
     "images": "圖片:",
     "prompt": "提示詞"
   },
+  "gptImage": {
+    "autoGenerate": "自動生成",
+    "downloading": "GPT Image 生成的圖片連結有效期有限，正在快取圖片到本地...",
+    "generate": "生成",
+    "generating": "生成中...",
+    "images": "圖片:",
+    "prompt": "提示詞"
+  },
   "localFiles": {
     "file": "檔案",
     "folder": "資料夾",

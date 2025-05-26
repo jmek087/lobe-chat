@@ -7,6 +7,14 @@
     "images": "تصاویر:",
     "prompt": "کلمات کلیدی"
   },
+  "gptImage": {
+    "autoGenerate": "تولید خودکار",
+    "downloading": "لینک تصویر تولید شده توسط GPT Image محدود به زمان است، در حال ذخیره تصویر به صورت محلی...",
+    "generate": "تولید",
+    "generating": "در حال تولید...",
+    "images": "تصاویر:",
+    "prompt": "کلمه کلیدی"
+  },
   "localFiles": {
     "file": "فایل",
     "folder": "پوشه",

@@ -7,6 +7,14 @@
     "images": "Imagens:",
     "prompt": "Palavra-chave"
   },
+  "gptImage": {
+    "autoGenerate": "Gerar automaticamente",
+    "downloading": "O link da imagem gerada pelo GPT Image tem validade limitada, salvando a imagem localmente...",
+    "generate": "Gerar",
+    "generating": "Gerando...",
+    "images": "Imagens:",
+    "prompt": "Palavra-chave"
+  },
   "localFiles": {
     "file": "Arquivo",
     "folder": "Pasta",

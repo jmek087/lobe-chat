@@ -7,6 +7,14 @@
     "images": "이미지:",
     "prompt": "알림 단어"
   },
+  "gptImage": {
+    "autoGenerate": "자동 생성",
+    "downloading": "GPT 이미지 생성의 링크 유효 기간이 제한되어 있습니다. 이미지를 로컬에 캐시하는 중...",
+    "generate": "생성",
+    "generating": "생성 중...",
+    "images": "이미지:",
+    "prompt": "프롬프트"
+  },
   "localFiles": {
     "file": "파일",
     "folder": "폴더",
