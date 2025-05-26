@@ -767,6 +767,19 @@ export const openaiSTTModels: AISTTModelCard[] = [
 export const openaiImageModels: AIText2ImageModelCard[] = [
   {
     description:
+      'OpenAI 最新的图像生成模型，支持高质量图像生成、图像编辑及多图片输入，可生成更高质量的图像',
+    displayName: 'GPT-Image-1',
+    id: 'gpt-image-1',
+    pricing: {
+      high: 0.1,
+      low: 0.03,
+      medium: 0.06,
+    },
+    resolutions: ['1024x1024', '1024x1536', '1536x1024', 'auto'],
+    type: 'image',
+  },
+  {
+    description:
       '最新的 DALL·E 模型，于2023年11月发布。支持更真实、准确的图像生成，具有更强的细节表现力',
     displayName: 'DALL·E 3',
     id: 'dall-e-3',
