@@ -18,6 +18,7 @@ import {
   EmbeddingsOptions,
   EmbeddingsPayload,
   ModelProvider,
+  TextToGptImagePayload,
   TextToImagePayload,
   TextToSpeechOptions,
   TextToSpeechPayload,
@@ -379,6 +380,30 @@ export const createOpenAICompatibleRuntime = <T extends Record<string, any> = an
         throw this.handleError(error);
       }
     }
+
+    async textToGptImage(payload: TextToGptImagePayload) {
+      try {
+        const res = await this.client.images.generate(payload);
+
+        return (res.data || [])
+          .map((o) => (o.b64_json ? `data:image/png;base64,${o.b64_json}` : null))
+          .filter(Boolean) as string[];
+      } catch (error) {
+        throw this.handleError(error);
+      }
+    }
+
+    // async image2Image(payload: Image2ImagePayload) {
+    //   try {
+    //     const res = await this.client.images.edit(payload);
+
+    //     return (res.data || [])
+    //       .map((o) => (o.b64_json ? `data:image/png;base64,${o.b64_json}` : null))
+    //       .filter(Boolean) as string[];
+    //   } catch (error) {
+    //     throw this.handleError(error);
+    //   }
+    // }
 
     async textToSpeech(payload: TextToSpeechPayload, options?: TextToSpeechOptions) {
       try {

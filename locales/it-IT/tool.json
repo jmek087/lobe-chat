@@ -7,6 +7,14 @@
     "images": "Immagini:",
     "prompt": "parola chiave"
   },
+  "gptImage": {
+    "autoGenerate": "Generazione automatica",
+    "downloading": "Il link all'immagine generata da GPT ha una validità limitata, sto memorizzando l'immagine in locale...",
+    "generate": "Genera",
+    "generating": "Generazione in corso...",
+    "images": "Immagini:",
+    "prompt": "Parola chiave"
+  },
   "localFiles": {
     "file": "File",
     "folder": "Cartella",
