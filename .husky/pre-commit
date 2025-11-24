@@ -1,2 +1,4 @@
-npm run type-check
-npx --no-install lint-staged
+#!/usr/bin/env sh
+export PATH="/opt/homebrew/bin:$PATH"
+pnpm run type-check
+pnpm exec lint-staged
