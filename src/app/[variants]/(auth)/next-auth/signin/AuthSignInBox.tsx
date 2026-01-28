@@ -8,12 +8,12 @@ import { Col, Flex, Row } from 'antd';
 import { createStaticStyles } from 'antd-style';
 import { AuthError } from 'next-auth';
 import { signIn } from 'next-auth/react';
-import { useRouter, useSearchParams } from '@/libs/next/navigation';
-import { memo, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import BrandWatermark from '@/components/BrandWatermark';
 import AuthIcons from '@/components/NextAuth/AuthIcons';
+import { useRouter, useSearchParams } from '@/libs/next/navigation';
 import { useUserStore } from '@/store/user';
 
 const styles = createStaticStyles(({ css, cssVar }) => ({
@@ -98,6 +98,16 @@ export default memo(() => {
       throw error;
     }
   };
+
+  // Auto trigger Casdoor sign-in when it's available.
+  useEffect(() => {
+    if (oAuthSSOProviders && oAuthSSOProviders.length > 0) {
+      const hasCasdoor = oAuthSSOProviders.includes('casdoor');
+      if (hasCasdoor) {
+        handleSignIn('casdoor');
+      }
+    }
+  }, [oAuthSSOProviders]);
 
   const footerBtns = [
     { href: DOCUMENTS_REFER_URL, id: 0, label: t('footerPageLink__help') },

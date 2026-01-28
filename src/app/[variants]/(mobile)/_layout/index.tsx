@@ -4,6 +4,7 @@ import { type FC, Suspense } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 
 import Loading from '@/components/Loading/BrandTextLoading';
+import NextAuthAutoRedirect from '@/features/Auth/NextAuthAutoRedirect';
 import { MarketAuthProvider } from '@/layout/AuthProvider/MarketAuth';
 import dynamic from '@/libs/next/dynamic';
 import { featureFlagsSelectors, useServerConfigStore } from '@/store/serverConfig';
@@ -31,6 +32,7 @@ const MobileMainLayout: FC = () => {
   return (
     <>
       <NavigatorRegistrar />
+      <NextAuthAutoRedirect />
       <Suspense fallback={null}>{showCloudPromotion && <CloudBanner mobile />}</Suspense>
       <MarketAuthProvider isDesktop={false}>
         <Suspense fallback={<Loading debugId="MobileMainLayout > Outlet" />}>
