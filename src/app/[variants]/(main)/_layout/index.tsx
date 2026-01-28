@@ -11,6 +11,7 @@ import { DndContextWrapper } from '@/app/[variants]/(main)/resource/features/Dnd
 import Loading from '@/components/Loading/BrandTextLoading';
 import { isDesktop } from '@/const/version';
 import { BANNER_HEIGHT } from '@/features/AlertBanner/CloudBanner';
+import NextAuthAutoRedirect from '@/features/Auth/NextAuthAutoRedirect';
 import DesktopNavigationBridge from '@/features/DesktopNavigationBridge';
 import AuthRequiredModal from '@/features/Electron/AuthRequiredModal';
 import TitleBar from '@/features/Electron/titlebar/TitleBar';
@@ -42,6 +43,7 @@ const Layout: FC = () => {
 
   return (
     <HotkeysProvider initiallyActiveScopes={[HotkeyScopeEnum.Global]}>
+      <NextAuthAutoRedirect />
       <Suspense fallback={null}>
         {isDesktop && <TitleBar />}
         {isDesktop && <DesktopAutoOidcOnFirstOpen />}
