@@ -48,6 +48,7 @@ export type ServerLanguageModel = Partial<Record<GlobalLLMProviderKey, ServerMod
 
 export interface GlobalServerConfig {
   aiProvider: ServerLanguageModel;
+  customOidcIssuerName?: string;
   defaultAgent?: PartialDeep<UserDefaultAgent>;
   enableBusinessFeatures?: boolean;
   enableEmailVerification?: boolean;

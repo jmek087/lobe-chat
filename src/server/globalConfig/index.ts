@@ -71,6 +71,7 @@ export const getServerGlobalConfig = async () => {
         withDeploymentName: true,
       },
     }),
+    customOidcIssuerName: authEnv.AUTH_CUSTOM_OIDC_ISSUER_NAME,
     defaultAgent: {
       config: parseAgentConfig(DEFAULT_AGENT_CONFIG),
     },

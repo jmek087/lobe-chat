@@ -9,6 +9,8 @@ import { Trans, useTranslation } from 'react-i18next';
 
 import AuthIcons from '@/components/NextAuth/AuthIcons';
 import { PRIVACY_URL, TERMS_URL } from '@/const/url';
+import { useServerConfigStore } from '@/store/serverConfig';
+import { serverConfigSelectors } from '@/store/serverConfig/selectors';
 
 import AuthCard from '../../../../features/AuthCard';
 
@@ -48,6 +50,7 @@ export const SignInEmailStep = ({
 }: SignInEmailStepProps) => {
   const { t } = useTranslation('auth');
   const emailInputRef = useRef<InputRef>(null);
+  const customOidcIssuerName = useServerConfigStore(serverConfigSelectors.customOidcIssuerName);
 
   useEffect(() => {
     emailInputRef.current?.focus();
@@ -62,6 +65,11 @@ export const SignInEmailStep = ({
   );
 
   const getProviderLabel = (provider: string) => {
+    // Check if there's a custom issuer name environment variable for this provider
+    if (provider === 'custom-oidc' && customOidcIssuerName) {
+      return customOidcIssuerName;
+    }
+
     const normalized = provider
       .toLowerCase()
       .replaceAll(/(^|[_-])([a-z])/g, (_, __, c) => c.toUpperCase());

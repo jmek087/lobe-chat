@@ -13,6 +13,7 @@ import Authentik from './providers/authentik';
 import Casdoor from './providers/casdoor';
 import CloudflareZeroTrust from './providers/cloudflare-zero-trust';
 import Cognito from './providers/cognito';
+import CustomOIDC from './providers/custom-oidc';
 import Feishu from './providers/feishu';
 import GenericOIDC from './providers/generic-oidc';
 import Github from './providers/github';
@@ -35,6 +36,7 @@ const providerDefinitions = [
   Authentik,
   Casdoor,
   CloudflareZeroTrust,
+  CustomOIDC,
   GenericOIDC,
   Keycloak,
   Logto,

@@ -75,6 +75,13 @@ declare global {
       AUTH_GENERIC_OIDC_SECRET?: string;
       AUTH_GENERIC_OIDC_ISSUER?: string;
 
+      AUTH_CUSTOM_OIDC_ISSUER_NAME?: string;
+      AUTH_CUSTOM_OIDC_ID?: string;
+      AUTH_CUSTOM_OIDC_SECRET?: string;
+      AUTH_CUSTOM_OIDC_AUTHORIZATION_URL?: string;
+      AUTH_CUSTOM_OIDC_TOKEN_URL?: string;
+      AUTH_CUSTOM_OIDC_USERINFO_URL?: string;
+
       AUTH_KEYCLOAK_ID?: string;
       AUTH_KEYCLOAK_SECRET?: string;
       AUTH_KEYCLOAK_ISSUER?: string;
@@ -211,6 +218,13 @@ export const getAuthConfig = () => {
       AUTH_GENERIC_OIDC_SECRET: z.string().optional(),
       AUTH_GENERIC_OIDC_ISSUER: z.string().optional(),
 
+      AUTH_CUSTOM_OIDC_ISSUER_NAME: z.string().optional(),
+      AUTH_CUSTOM_OIDC_ID: z.string().optional(),
+      AUTH_CUSTOM_OIDC_SECRET: z.string().optional(),
+      AUTH_CUSTOM_OIDC_AUTHORIZATION_URL: z.string().optional(),
+      AUTH_CUSTOM_OIDC_TOKEN_URL: z.string().optional(),
+      AUTH_CUSTOM_OIDC_USERINFO_URL: z.string().optional(),
+
       AUTH_KEYCLOAK_ID: z.string().optional(),
       AUTH_KEYCLOAK_SECRET: z.string().optional(),
       AUTH_KEYCLOAK_ISSUER: z.string().optional(),
@@ -339,6 +353,13 @@ export const getAuthConfig = () => {
       AUTH_GENERIC_OIDC_ID: process.env.AUTH_GENERIC_OIDC_ID,
       AUTH_GENERIC_OIDC_SECRET: process.env.AUTH_GENERIC_OIDC_SECRET,
       AUTH_GENERIC_OIDC_ISSUER: process.env.AUTH_GENERIC_OIDC_ISSUER,
+
+      AUTH_CUSTOM_OIDC_ISSUER_NAME: process.env.AUTH_CUSTOM_OIDC_ISSUER_NAME,
+      AUTH_CUSTOM_OIDC_ID: process.env.AUTH_CUSTOM_OIDC_ID,
+      AUTH_CUSTOM_OIDC_SECRET: process.env.AUTH_CUSTOM_OIDC_SECRET,
+      AUTH_CUSTOM_OIDC_AUTHORIZATION_URL: process.env.AUTH_CUSTOM_OIDC_AUTHORIZATION_URL,
+      AUTH_CUSTOM_OIDC_TOKEN_URL: process.env.AUTH_CUSTOM_OIDC_TOKEN_URL,
+      AUTH_CUSTOM_OIDC_USERINFO_URL: process.env.AUTH_CUSTOM_OIDC_USERINFO_URL,
 
       AUTH_KEYCLOAK_ID: process.env.AUTH_KEYCLOAK_ID,
       AUTH_KEYCLOAK_SECRET: process.env.AUTH_KEYCLOAK_SECRET,

@@ -21,6 +21,7 @@ const createDiscoveryUrl = (issuer: string) => {
 };
 
 type OIDCProviderInput = {
+  authorizationUrl?: string;
   clientId?: string;
   clientSecret?: string;
   issuer?: string;
@@ -28,6 +29,8 @@ type OIDCProviderInput = {
   pkce?: boolean;
   providerId: string;
   scopes?: string[];
+  tokenUrl?: string;
+  userInfoUrl?: string;
 };
 
 export const buildOidcConfig = ({
@@ -35,14 +38,38 @@ export const buildOidcConfig = ({
   clientId,
   clientSecret,
   issuer,
+  authorizationUrl,
+  tokenUrl,
+  userInfoUrl,
   scopes = DEFAULT_OIDC_SCOPES,
   pkce = true,
   overrides,
 }: OIDCProviderInput): GenericOAuthConfig => {
-  const sanitizedIssuer = issuer?.trim();
-
-  if (!clientId || !clientSecret || !sanitizedIssuer) {
+  if (!clientId || !clientSecret) {
     throw new Error(`[Better-Auth] ${providerId} OAuth enabled but missing credentials`);
+  }
+
+  // If manual endpoints are provided, use them directly
+  if (authorizationUrl && tokenUrl) {
+    return {
+      authorizationUrl,
+      clientId,
+      clientSecret,
+      pkce,
+      providerId,
+      scopes,
+      tokenUrl,
+      userInfoUrl,
+      ...overrides,
+    } satisfies GenericOAuthConfig;
+  }
+
+  // Otherwise, use OIDC discovery
+  const sanitizedIssuer = issuer?.trim();
+  if (!sanitizedIssuer) {
+    throw new Error(
+      `[Better-Auth] ${providerId} OAuth requires either issuer (for auto-discovery) or manual authorizationUrl + tokenUrl`,
+    );
   }
 
   const normalizedIssuer = sanitizedIssuer.replace(/\/$/, '');
