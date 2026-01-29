@@ -1,6 +1,6 @@
 import { ENABLE_BUSINESS_FEATURES } from '@lobechat/business-const';
 import { Form } from 'antd';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import type { CheckUserResponseData } from '@/app/(backend)/api/auth/check-user/route';
@@ -38,6 +38,7 @@ export const useSignIn = () => {
   const [form] = Form.useForm<SignInFormValues>();
   const [loading, setLoading] = useState(false);
   const [socialLoading, setSocialLoading] = useState<string | null>(null);
+  const autoRedirectedRef = useRef(false);
   const [step, setStep] = useState<Step>('email');
   const [email, setEmail] = useState('');
   const [isSocialOnly, setIsSocialOnly] = useState(false);
@@ -222,9 +223,11 @@ export const useSignIn = () => {
     if (!enableBetterAuth) return;
     if (isLogin) return;
     if (!serverConfigInit) return;
+    if (autoRedirectedRef.current) return;
     if (loading || socialLoading) return;
     if (oAuthSSOProviders.length !== 1) return;
 
+    autoRedirectedRef.current = true;
     handleSocialSignIn(oAuthSSOProviders[0]);
   }, [
     serverConfigInit,
