@@ -7,11 +7,14 @@ import type { CheckUserResponseData } from '@/app/(backend)/api/auth/check-user/
 import type { ResolveUsernameResponseData } from '@/app/(backend)/api/auth/resolve-username/route';
 import { useBusinessSignin } from '@/business/client/hooks/useBusinessSignin';
 import { message } from '@/components/AntdStaticMethods';
+import { enableBetterAuth } from '@/envs/auth';
 import { requestPasswordReset, signIn } from '@/libs/better-auth/auth-client';
 import { isBuiltinProvider, normalizeProviderId } from '@/libs/better-auth/utils/client';
 import { useRouter, useSearchParams } from '@/libs/next/navigation';
 import { useServerConfigStore } from '@/store/serverConfig';
 import { serverConfigSelectors } from '@/store/serverConfig/selectors';
+import { useUserStore } from '@/store/user';
+import { authSelectors } from '@/store/user/selectors';
 
 import { EMAIL_REGEX, USERNAME_REGEX } from './SignInEmailStep';
 
@@ -38,6 +41,7 @@ export const useSignIn = () => {
   const [step, setStep] = useState<Step>('email');
   const [email, setEmail] = useState('');
   const [isSocialOnly, setIsSocialOnly] = useState(false);
+  const isLogin = useUserStore(authSelectors.isLogin);
   const serverConfigInit = useServerConfigStore((s) => s.serverConfigInit);
   const oAuthSSOProviders = useServerConfigStore((s) => s.serverConfig.oAuthSSOProviders) || [];
   const { ssoProviders, preSocialSigninCheck, getAdditionalData } = useBusinessSignin();
@@ -213,6 +217,23 @@ export const useSignIn = () => {
       setSocialLoading(null);
     }
   };
+
+  useEffect(() => {
+    if (!enableBetterAuth) return;
+    if (isLogin) return;
+    if (!serverConfigInit) return;
+    if (loading || socialLoading) return;
+    if (oAuthSSOProviders.length !== 1) return;
+
+    handleSocialSignIn(oAuthSSOProviders[0]);
+  }, [
+    serverConfigInit,
+    loading,
+    socialLoading,
+    oAuthSSOProviders,
+    handleSocialSignIn,
+    isLogin,
+  ]);
 
   const handleBackToEmail = () => {
     setStep('email');
